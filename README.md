@@ -42,6 +42,7 @@ The game window will open, and you can control the position of the rectangle and
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/23132897/236728252-5d6c1891-95e1-4ce6-9636-7c570a03a549.png)
+![image](https://user-images.githubusercontent.com/23132897/236781252-511ce83d-4e15-4cfa-9a5a-0f655fd27503.png)
 
 ## Contributing
 
