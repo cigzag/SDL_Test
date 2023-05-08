@@ -49,17 +49,30 @@ int ProcessEvents(SDL_Window *w, Man *man) {
                 case SDLK_ESCAPE: {
                     return 1;
                 }
-                case SDLK_RIGHT: {
-                    man->x += 10;
-                    break;
-                }
-                case SDLK_LEFT: {
-                    man->x -= 10;
-                    break;
-                }
                 default:
                     break;
             }
+        }
+
+        const uint8_t *state = SDL_GetKeyboardState(NULL);
+        if(state[SDL_SCANCODE_RETURN]) {
+            printf("<RETURN> is pressed.\n");
+        }
+
+        if(state[SDL_SCANCODE_LEFT]) {
+            man->x -= 10;
+        }
+
+        if(state[SDL_SCANCODE_RIGHT]) {
+            man->x += 10;
+        }
+
+        if(state[SDL_SCANCODE_UP]) {
+            man->y -= 10;
+        }
+
+        if(state[SDL_SCANCODE_DOWN]) {
+            man->y += 10;
         }
     }
 }
@@ -80,7 +93,7 @@ void doRender(SDL_Renderer *renderer, Man *man) {
     // done drawing, present to screen
     SDL_RenderPresent(renderer);
 
-    SDL_Delay(100);
+    SDL_Delay(10);
 }
 
 int main(int argc, const char *argv[]) {
