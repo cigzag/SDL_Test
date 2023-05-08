@@ -93,7 +93,7 @@ void doRender(SDL_Renderer *renderer, Man *man) {
     // done drawing, present to screen
     SDL_RenderPresent(renderer);
 
-    SDL_Delay(10);
+    //SDL_Delay(10);
 }
 
 int main(int argc, const char *argv[]) {
@@ -118,7 +118,7 @@ int main(int argc, const char *argv[]) {
 
     // create window
     window = SDL_CreateWindow("Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, 0);
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
     int done = 0;
     while(!done) {
