@@ -39,6 +39,10 @@ To run the game, execute the following command in the project directory:
 
 The game window will open, and you can control the position of the rectangle and image using the arrow keys. Press the Esc key or close the window to exit the game.
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/23132897/236728252-5d6c1891-95e1-4ce6-9636-7c570a03a549.png)
+
 ## Contributing
 
 Contributions to this project are welcome. If you find any issues or would like to suggest improvements, please open an issue or submit a pull request.
